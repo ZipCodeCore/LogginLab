@@ -21,6 +21,20 @@ Java logging also supports logging exceptions, which can be helpful in identifyi
 
 Overall, Java logging is a powerful tool for debugging and monitoring the status of an application.
 
+### Notice this in the LogginLab class
+
+```java
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class LogginLab {
+    private final static Logger logger = Logger.getLogger(LogginLab.class.getName());
+
+// and so on...
+```
+
+What *are* thos imports for??
+
 ### What you need to do
 
 - Write a method called `thresholdReached`, returns true if argument 'limit' is over the threshold.
